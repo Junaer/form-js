@@ -8,7 +8,7 @@ let newDiv = document.createElement("div")
 
 button.addEventListener('click', () => {
     console.log(button.getBoundingClientRect())
-    let { right, top, bottom, left } = button.getBoundingClientRect()
+    let { right, top, bottom, left, x, height} = button.getBoundingClientRect()
     if (newDiv.classList[0] === 'message') {
         console.log(newDiv, 123)
         body.removeChild(newDiv)
@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
         newDiv.innerHTML = "<h3 class='title'>Popover title </h3>"
         newDiv.innerHTML += "<p class='text'>And here's some amazing content. It's very engaging. Right?</p>";
         console.log(button.offsetWidth)
-        newDiv.style.left = left + button.offsetWidth / 2 - newDiv.offsetWidth / 2 - 150 + 'px'
+        newDiv.style.left = left + button.offsetWidth / 2 - newDiv.offsetWidth / 2 - (x - height)  + 'px'
         newDiv.style.top = top - top + 10 + 'px'
         newDiv.style.right = right + 'px'
         newDiv.style.bottom = bottom + 'px'

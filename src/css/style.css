@@ -26,6 +26,7 @@
     position: absolute;
     display: block;
     border: 3px solid transparent;
+    border-radius: 2%;
     box-shadow: 0 0 0 .2rem rgba(225, 83, 97, .5);
     height: auto;
     width: auto;
