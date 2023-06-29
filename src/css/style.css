@@ -1,4 +1,10 @@
-.btn {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .btn {
     background-color: #dc3545;
     margin-top: 8.25rem;
     margin-bottom: .25rem;
@@ -13,28 +19,32 @@
     text-align: center;
     font-weight: 400;
     vertical-align: middle;
-    box-shadow: 0 0 0 .2rem rgba(225,83,97,.5);
-}
-.message {
+    box-shadow: 0 0 0 .2rem rgba(225, 83, 97, .5);
+  }
+  
+  .message {
     position: absolute;
     display: block;
     border: 3px solid transparent;
-    box-shadow: 0 0 0 .2rem rgba(225,83,97,.5);
+    box-shadow: 0 0 0 .2rem rgba(225, 83, 97, .5);
     height: auto;
     width: auto;
     display: inline-block;
     width: 19em;
     height: 7em;
-}
-.title {
-    position: relative;
-    border: 1px solid transparent;
-    border-color: black;
-}
-.text {
-    margin-bottom: 60px;
-    position: relative;
-    border: 1px solid transparent;
-    border-color: black;
-
-}
+    /*margin-left: calc(19em - 50%);*/
+  }
+  
+  .title {
+    padding: 10px 15px 5px;
+    border-bottom: 1px solid grey;
+    background-color: #eee;
+  }
+  
+  .text {
+    padding: 10px 15px 5px;
+  }
+  
+  .main {
+    margin-left: 200px;
+  }

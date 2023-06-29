@@ -19,8 +19,8 @@ button.addEventListener('click', () => {
         newDiv.innerHTML = "<h3 class='title'>Popover title </h3>"
         newDiv.innerHTML += "<p class='text'>And here's some amazing content. It's very engaging. Right?</p>";
         console.log(button.offsetWidth)
-        newDiv.style.left = left + 'px'
-        newDiv.style.top = top - 130 + 'px'
+        newDiv.style.left = left + button.offsetWidth / 2 - newDiv.offsetWidth / 2 - 150 + 'px'
+        newDiv.style.top = top - top + 10 + 'px'
         newDiv.style.right = right + 'px'
         newDiv.style.bottom = bottom + 'px'
         body.appendChild(newDiv)
