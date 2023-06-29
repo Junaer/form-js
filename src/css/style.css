@@ -25,9 +25,9 @@
   .message {
     position: absolute;
     display: block;
-    border: 3px solid transparent;
+    border: 0.5px solid transparent;
     border-radius: 2%;
-    box-shadow: 0 0 0 .2rem rgba(225, 83, 97, .5);
+    box-shadow: 0 0 0 .1rem black;
     height: auto;
     width: auto;
     display: inline-block;
@@ -42,10 +42,11 @@
     height: 0;
     position: absolute; 
     right: 50%; 
-    top: calc(105%);
-    border-top: 12px solid transparent;
-    border-right: 24px solid rgba(225, 83, 97, .5);
-    border-bottom: 12px solid transparent;
+    top: calc(103%);
+    border-top: 8px solid transparent;
+
+    border-right: 20px solid black;
+    border-bottom: 8px solid transparent;
     transform: rotate(-91deg);
   }
   
@@ -73,6 +74,6 @@
     /* border-width: .5rem .5rem 0; */
     border-top-color: rgba(0,0,0,.25);
     bottom: 4px;
-    color: rgba(225, 83, 97, .5);
+    color: black;
   }
 
