@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
         newDiv.classList.add('message')
         newDiv.innerHTML = "<h3 class='title'>Popover title </h3>"
         newDiv.innerHTML += "<p class='text'>And here's some amazing content. It's very engaging. Right?</p>";
-        newDiv.innerHTML += "<div class='arrow'>\\/</div>"
+        newDiv.innerHTML += "<div class='arrow'></div>"
         console.log(button.offsetWidth)
         newDiv.style.top = top - top + 10 + 'px'
         body.appendChild(newDiv)
